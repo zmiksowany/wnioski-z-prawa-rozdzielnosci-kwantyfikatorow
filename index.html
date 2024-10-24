@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wnioski z prawa rozdzielności</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .source {
+            font-size: smaller; /* Mniejsza czcionka dla źródła */
+            margin-top: 20px; /* Odstęp między źródłem a resztą */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wnioski z prawa rozdzielności:</h1>
+
+    <ul>
+        <li>trzecie prawo (∃x : (p(x) ∧ q(x)) ⇒ [(∃x : p(x)) ∧ (∃x : q(x))]) mówi, że nie możemy skrócić zapisu koniunkcji kwantyfikatorów ∃,</li>
+        <li>czwarte prawo ([(∀x : p(x)) ∨ (∀x : q(x))] ⇒ ∀x : (p(x) ∨ q(x))) mówi, że nie         możemy rozłożyć kwantyfikatora ∀ łączącego dwie formy zdaniowe implikacją,</li>
+        <li>wnioski te oczywiście wynikają z tego, że w prawach tych nie mamy równoważności.</li>
+    </ul>
+    
+
+    <h2>Kontrprzykład (w nawiązaniu do trzeciego prawa):</h2>
+
+    <p>Rozważamy dwie funkcje zdaniowe 'x = 2' oraz 'x = 3'. Dziedziną obu funkcji zdaniowych są liczby rzeczywiste. Wtedy zdania (∃x : x = 2) ∧ (∃x : x = 3) oraz ∃x : (x = 2 ∧ x = 3) są odpowiednio prawdziwe i fałszywe. Zatem fałszywa jest implikacja [(∃x : x = 2) ∧ (∃x : x = 3)] ⇒ ∃x : (x = 2 ∧ x = 3).</p>
+
+    <h2>Kontrprzykład (w nawiązaniu do czwartego prawa):</h2>
+
+    <p>Rozważmy dwie funkcje zdaniowe x > 0 oraz x ≤ 0. Dziedziną obu funkcji zdaniowych są liczby rzeczywiste. Wtedy prawdziwe jest zdanie ∀x : (x > 0 ∨ x ≤ 0). Natomiast alternatywa (∀x : x > 0) ∨ (∀x : x ≤ 0) jest fałszywa, gdyż obie składowe są fałszywe. Zatem fałszywa jest implikacja ∀x : (x > 0 ∨ x ≤ 0) ⇒ [(∀x : x > 0) ∨ (∀x : x ≤ 0)].</p>
+
+    <p class="source">Źródło: <i>"AGH - Wydział Matematyki Stosowanej - Wstęp do Logiki i Teorii Mnogości, dr. Konrad Nosek."</i></p>
+
+</body>
+</html>
